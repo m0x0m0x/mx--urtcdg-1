@@ -5,13 +5,13 @@ Purely for testing
 use crate::utz::print_with_synthwave_gradient;
 
 // --- Main function ---
-pub fn test1_main_run() {
-    test1_main_run();
+pub fn t1m() {
+    tsf1();
 }
 
 // --- Sub functions ---
 
-fn test1_sub_function() {
+fn tsf1() {
     // This is a test function
     let text = "Hello, Synthwave!";
     print_with_synthwave_gradient(text.to_string());
