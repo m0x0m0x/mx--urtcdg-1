@@ -2,9 +2,11 @@
 Main Runner
 */
 
+use test1::test1_main_run;
+
+mod test1;
 mod utz;
-use utz::print_with_synthwave_gradient;
 
 fn main() {
-    print_with_synthwave_gradient("Welcome".to_string());
+    test1_main_run();
 }
