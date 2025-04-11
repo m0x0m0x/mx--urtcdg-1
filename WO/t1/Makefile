@@ -24,7 +24,7 @@ run:
 
 # Run tests
 test:
-	cargo nextest run
+	cargo nextest run -v
 
 # Clean the project
 clean:
