@@ -1,3 +1,10 @@
+/*
+Main Runner
+*/
+
+mod utz;
+use utz::print_with_synthwave_gradient;
+
 fn main() {
-    println!("Hello, world! bro smellpanty");
+    print_with_synthwave_gradient("Welcome to Synthwave CLI!".to_string());
 }
