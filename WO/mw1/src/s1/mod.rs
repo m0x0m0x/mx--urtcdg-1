@@ -32,7 +32,7 @@ fn s1_fn() {
     //  Another way of declaring vector - Vec::new()
 
     // list of suits
-    let suits = ["Hearts", "Diamonds", "Clubs", "Spades"];
+    let suits = ["💗", "", "Clubs", "Spades"];
     // List of values
     let values = ["Ace", "Two", "Three"];
 
@@ -50,6 +50,6 @@ fn s1_fn() {
         }
     }
 
-    let deck = Deck { cards: cards };
+    let deck = Deck { cards };
     println!("Deck: {:#?}", deck.green());
 }
