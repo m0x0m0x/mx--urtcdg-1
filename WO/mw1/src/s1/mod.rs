@@ -20,6 +20,7 @@ fn test_func1() {
 /////////////// Section 1 Work starts here ///////////////
 
 // Struct with vector
+#[derive(Debug)]
 struct Deck {
     cards: Vec<String>,
 }
@@ -28,5 +29,5 @@ fn s1_fn() {
     // defining a vector of strings which are called bindings
     //  Another way of declaring vector - Vec::new()
     let deck = Deck { cards: vec![] };
-    println!("Deck: {}", deck);
+    println!("Deck: {:?}", deck);
 }
