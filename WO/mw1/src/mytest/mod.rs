@@ -2,6 +2,8 @@
 These will have my functions for testing
 */
 
+#![allow(unused)]
+
 use crate::utils::{header, pswg};
 use yansi::Paint;
 
