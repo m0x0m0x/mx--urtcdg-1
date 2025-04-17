@@ -25,3 +25,4 @@ Site | What
    1. `let` is used to create a variable   
    2. `let mut` is used to create a mutable variable
    3. `let mut x = 5` - creates a mutable variable `x` with value `5`
+3. `impl` - Implementation which is for structs
