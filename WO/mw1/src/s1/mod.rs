@@ -2,6 +2,8 @@
 Sectin 1 Work here
 */
 
+#![allow(unused)]
+
 use crate::utils::print_with_synthwave_gradient;
 use yansi::Paint;
 
