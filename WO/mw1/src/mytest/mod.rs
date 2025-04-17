@@ -22,11 +22,15 @@ Testing struct and implementation
 struct Woman {
     boobs: String,
     pussy: String,
+    ass: String,
 }
 
 impl Woman {
     fn lick(&self) -> String {
-        format!("Woman boobs {} and smelly {}", self.boobs, self.pussy)
+        format!(
+            "Woman boobs {} and smelly {} giant {}",
+            self.boobs, self.pussy, self.ass
+        )
     }
 }
 
@@ -36,6 +40,7 @@ fn struct_impl_test1() {
     let woman1 = Woman {
         boobs: String::from("Big"),
         pussy: String::from("Hairy"),
+        ass: String::from("fluddy"),
     };
 
     println!("{}", woman1.lick());
