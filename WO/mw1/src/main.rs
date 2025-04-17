@@ -2,9 +2,10 @@
 Main entry point for the Rust application.
 */
 
+mod s1;
 mod utils;
-use utils::print_with_synthwave_gradient;
+use s1::s1main;
 
 fn main() {
-    print_with_synthwave_gradient("Welcome to Synthwave CLI".to_string());
+    s1main();
 }
