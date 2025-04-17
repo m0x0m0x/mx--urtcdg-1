@@ -25,7 +25,7 @@ You can include as much text as you need.
 = And these are quite nice 
 "#;
 
-    println!("{}", multiline_text.green());
+    println!("{}", multiline_text.to_string().green());
 }
 
 fn subt2() {
