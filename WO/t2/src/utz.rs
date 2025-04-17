@@ -19,7 +19,7 @@ pub fn print_with_synthwave_gradient(text: String) {
 
     say(Options {
         text,
-        font: Fonts::FontTiny,
+        font: Fonts::FontConsole,
         gradient: synth,
         independent_gradient: false,
         transition_gradient: true,

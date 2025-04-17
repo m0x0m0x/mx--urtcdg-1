@@ -1,0 +1,8 @@
+[jobs.check]
+command = ["cargo", "check", "--color=always"]
+
+[jobs.build]
+command = ["cargo", "build", "--color=always"]
+
+[jobs.run]
+command = ["cargo", "run", "--", "--color", "yes"]

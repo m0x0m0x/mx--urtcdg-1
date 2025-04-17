@@ -2,10 +2,9 @@
 Main Entry FUnction
 */
 
+mod test1;
 mod utz;
-use utz::print_with_synthwave_gradient;
-
+use test1::test1_main;sssss
 fn main() {
-    // Print the header
-    print_with_synthwave_gradient("Welcome to Synthwave CLI".to_string());
+    test1_main();
 }
