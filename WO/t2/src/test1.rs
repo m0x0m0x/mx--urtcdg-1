@@ -13,6 +13,7 @@ use yansi::Paint;
 pub fn test1_main() {
     print_with_synthwave_gradient("Multi Lines".to_string());
     subt1();
+    subt2();
 }
 
 // Function to demonstrate multi-line text
