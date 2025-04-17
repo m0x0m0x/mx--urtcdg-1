@@ -27,14 +27,14 @@ struct Woman {
 }
 
 impl Woman {
-    fn sniff() -> Self {
-        println!("Sniff her Ass");
-        Self {
-            boobs: String::from("Default"),
-            pussy: String::from("Default"),
-            ass: String::from("Default"),
-        }
-    }
+    // fn sniff() -> Self {
+    //     println!("Sniff her Ass");
+    //     Self {
+    //         boobs: String::from("Default"),
+    //         pussy: String::from("Default"),
+    //         ass: String::from("Default"),
+    //     }
+    // }
 
     fn lick(&self) -> String {
         format!(
