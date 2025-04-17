@@ -21,3 +21,7 @@ Site | What
 1. `Vectors` - Arrays that can change size 
    1. `arrays` - Fixed Length
    2. `array` is faster than a `vector`
+2. Since variables are by default immutable, they are called `bindings`
+   1. `let` is used to create a variable   
+   2. `let mut` is used to create a mutable variable
+   3. `let mut x = 5` - creates a mutable variable `x` with value `5`

@@ -45,11 +45,11 @@ fn s1_fn() {
     // Double nested for loops - to generate combinations
     for suit in suits {
         for value in values {
-            let card = format!("{} of {}", value.blue(), suit.yellow());
+            let card = format!("{} of {}", value, suit);
             cards.push(card);
         }
     }
 
-    let deck = Deck { cards: vec![] };
+    let deck = Deck { cards: cards };
     println!("Deck: {:#?}", deck.green());
 }
