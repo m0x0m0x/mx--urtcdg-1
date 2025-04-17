@@ -21,7 +21,9 @@ fn subt1() {
     let multiline_text = r#"
 This is a multi-line text.
 It can span multiple lines.
-You can include as much text as you need."#;
+You can include as much text as you need.
+= And these are quite nice 
+"#;
 
     println!("{}", multiline_text.green());
 }
