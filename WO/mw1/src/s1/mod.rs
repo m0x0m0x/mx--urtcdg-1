@@ -9,7 +9,15 @@ pub fn s1main() {
     test_func1();
 }
 
+// Test function
 fn test_func1() {
     print_with_synthwave_gradient("Section 1".to_string());
     println!("{}", "Booty".red());
+}
+
+/////////////// Section 1 Work starts here ///////////////
+
+// Struct with vector
+struct Deck {
+    cards: Vec<String>,
 }
