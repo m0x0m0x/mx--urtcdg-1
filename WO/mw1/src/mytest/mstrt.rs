@@ -1,6 +1,22 @@
 /*
 Actuakl Struct test
 */
+
+#![allow(unused)]
+
+use crate::utils::{header, pswg};
+use yansi::Paint;
+
+/////////// Main function ///////////
+
+pub fn mstrt() {
+    // Printing the header text
+    header("Structs and Implementation".to_string());
+
+    // Call the test function
+    struct_impl_test1();
+}
+
 #[derive(Debug)]
 struct Woman {
     boobs: String,
