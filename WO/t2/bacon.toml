@@ -6,3 +6,4 @@ command = ["cargo", "build", "--color=always"]
 
 [jobs.run]
 command = ["cargo", "run", "--", "--color", "yes", "--verbose"]
+need_stdout = true
