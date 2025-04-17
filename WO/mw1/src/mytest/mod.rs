@@ -40,7 +40,7 @@ fn struct_impl_test1() {
     let woman1 = Woman {
         boobs: String::from("Big"),
         pussy: String::from("Hairy"),
-        ass: String::from("fluddy"),
+        ass: String::from("fluffy"),
     };
 
     println!("{}", woman1.lick());
