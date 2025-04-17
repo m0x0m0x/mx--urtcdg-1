@@ -21,3 +21,9 @@ fn test_func1() {
 struct Deck {
     cards: Vec<String>,
 }
+
+fn s1_fn() {
+    // defining a vector of strings which are called bindings
+
+    let deck = Deck { cards: vec![] };
+}
