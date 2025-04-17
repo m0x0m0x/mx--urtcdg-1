@@ -4,7 +4,7 @@ Sectin 1 Work here
 
 #![allow(unused)]
 
-use crate::utils::header;
+use crate::utils::{header, pswg};
 use yansi::Paint;
 
 pub fn s1main() {
@@ -26,7 +26,7 @@ struct Deck {
 
 fn s1_fn() {
     // Printing the header text
-    header("Section 1 - Structs and Vectors");
+    pswg("Section 1 - Structs and Vectors".to_string());
 
     // defining a vector of strings which are called bindings
     //  Another way of declaring vector - Vec::new()

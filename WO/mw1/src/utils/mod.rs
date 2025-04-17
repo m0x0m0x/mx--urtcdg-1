@@ -7,7 +7,7 @@ Utils folder
 use cfonts::{Fonts, Options, say};
 use yansi::Paint;
 
-pub fn print_with_synthwave_gradient(text: String) {
+pub fn pswg(text: String) {
     // Define the fire gradient colors
     let synth = vec![
         String::from("#FF00FF"), // Neon Pink
