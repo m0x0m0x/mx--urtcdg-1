@@ -36,7 +36,15 @@ fn s1_fn() {
     // List of values
     let values = ["Ace", "Two", "Three"];
 
+    // Empty vector of cards
+    let cards = vec![];
+
     // Double nested for loops - to generate combinations
+    for suit in suits {
+        for value in values {
+            let card = format!("{} of {}", value.blue(), suit.yellow());
+        }
+    }
 
     let deck = Deck { cards: vec![] };
     println!("Deck: {:#?}", deck.green());
