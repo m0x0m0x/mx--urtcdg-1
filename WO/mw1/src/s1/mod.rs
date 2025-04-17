@@ -30,6 +30,15 @@ fn s1_fn() {
 
     // defining a vector of strings which are called bindings
     //  Another way of declaring vector - Vec::new()
+
+    // list of suits
+    let suits = vec!["Hearts", "Diamonds", "Clubs", "Spades"];
+    let values = vec!["Ace", "Two", "Three"];
+
+    // List of values
+
+    // Double nested for loops - to generate combinations
+
     let deck = Deck { cards: vec![] };
     println!("Deck: {:#?}", deck.green());
 }
