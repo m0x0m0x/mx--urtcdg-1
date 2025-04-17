@@ -11,7 +11,7 @@ use yansi::Paint;
 
 pub fn mstrt() {
     // Printing the header text
-    header("Structs and Implementation".to_string());
+    header("Structs and Implementation");
 
     // Call the test function
     struct_impl_test1();
@@ -33,7 +33,7 @@ impl Woman {
     }
 }
 
-pub fn struct_impl_test1() {
+fn struct_impl_test1() {
     pswg("Struct and Implementation Test".to_string());
 
     let woman1 = Woman {
