@@ -8,7 +8,9 @@ use crate::utils::{header, pswg};
 use yansi::Paint;
 
 /////////// Main function ///////////
-
+/*
+Note: This main function is calling all the other subfunction
+*/
 pub fn mstrt_main() {
     // Printing the header text
     header("Structs and Implementation");
