@@ -1,3 +1,0 @@
-/*
-Actuakl Struct test
-*/
