@@ -27,6 +27,10 @@ struct Woman {
 }
 
 impl Woman {
+    fn sniff() -> Self {
+        println!("Sniff her Ass")
+    }
+
     fn lick(&self) -> String {
         format!(
             "Woman boobs {} and smelly {} giant {}",
