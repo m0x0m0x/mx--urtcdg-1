@@ -20,3 +20,4 @@ Site | What
 
 1. `Vectors` - Arrays that can change size 
    1. `arrays` - Fixed Length
+   2. `array` is faster than a `vector`

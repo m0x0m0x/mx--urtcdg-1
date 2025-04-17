@@ -32,10 +32,9 @@ fn s1_fn() {
     //  Another way of declaring vector - Vec::new()
 
     // list of suits
-    let suits = vec!["Hearts", "Diamonds", "Clubs", "Spades"];
-    let values = vec!["Ace", "Two", "Three"];
-
+    let suits = ["Hearts", "Diamonds", "Clubs", "Spades"];
     // List of values
+    let values = ["Ace", "Two", "Three"];
 
     // Double nested for loops - to generate combinations
 
