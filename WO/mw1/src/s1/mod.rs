@@ -4,7 +4,7 @@ Sectin 1 Work here
 
 #![allow(unused)]
 
-use crate::utils::{header, print_with_synthwave_gradient};
+use crate::utils::header;
 use yansi::Paint;
 
 pub fn s1main() {
@@ -26,10 +26,10 @@ struct Deck {
 
 fn s1_fn() {
     // Printing the header text
-    header("Section 1");
+    header("Section 1 - Structs and Vectors");
 
     // defining a vector of strings which are called bindings
     //  Another way of declaring vector - Vec::new()
     let deck = Deck { cards: vec![] };
-    println!("Deck: {:?}", deck);
+    println!("Deck: {:#?}", deck);
 }
