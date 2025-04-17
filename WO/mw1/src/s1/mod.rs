@@ -24,6 +24,11 @@ struct Deck {
     cards: Vec<String>,
 }
 
+// Inherent Implemenation
+impl Deck {
+    fn new() -> Self {}
+}
+
 fn s1_fn() {
     // Printing the header text
     pswg("Section 1 - Structs and Vectors".to_string());
