@@ -43,6 +43,7 @@ fn s1_fn() {
     for suit in suits {
         for value in values {
             let card = format!("{} of {}", value.blue(), suit.yellow());
+            cards.push(card);
         }
     }
 
