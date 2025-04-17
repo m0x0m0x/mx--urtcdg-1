@@ -32,7 +32,7 @@ fn s1_fn() {
     //  Another way of declaring vector - Vec::new()
 
     // list of suits
-    let suits = ["💗", "", "Clubs", "Spades"];
+    let suits = ["🖤", "❤️", "♣️", "💎"];
     // List of values
     let values = ["Ace", "Two", "Three"];
 
