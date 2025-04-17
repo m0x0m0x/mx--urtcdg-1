@@ -19,10 +19,9 @@ pub fn test1_main() {
 // Function to demonstrate multi-line text
 fn subt1() {
     let multiline_text = r#"
-This is a multi-line text.
-It can span multiple lines.
-You can include as much text as you need.
-= And these are quite nice 
+Getting bacon to print multiple lines
+is a pain the fuck. Fucekr deosnt want o print
+- But when u do cargo run it will work
 "#;
 
     println!("{}", multiline_text.to_string().green());
