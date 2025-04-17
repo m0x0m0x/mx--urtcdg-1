@@ -37,7 +37,10 @@ fn s1_fn() {
     let values = ["Ace", "Two", "Three"];
 
     // Empty vector of cards
-    let cards = vec![];
+    let mut cards = vec![];
+
+    // Example of reassignment
+    // cards = vec![];
 
     // Double nested for loops - to generate combinations
     for suit in suits {
