@@ -23,7 +23,7 @@ hea1() {
 # Command to run
 bacon_run() {
     hea1 "Running bacon"
-    CO1="bacon -- -q"
+    CO1="bacon run -- -q"
     eval "$CO1"
 }
 
