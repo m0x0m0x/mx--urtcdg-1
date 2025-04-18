@@ -6,8 +6,8 @@ mod mytest;
 mod s1;
 mod utils;
 // use mytest::mstrt::mstrt_main;
-use s1::s1main;
+use s1::s1main as panty_smell;
 
 fn main() {
-    s1main();
+    panty_smell();
 }
