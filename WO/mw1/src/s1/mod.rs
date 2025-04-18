@@ -63,7 +63,6 @@ impl Deck {
         // Create a new random number generator
         let mut rngz = rng();
 
-        // TODO: Add Error handling
         println!("Random die roll: {}", rng().random_range(1..=600));
         self.cards.shuffle(&mut rngz);
     }
@@ -81,6 +80,7 @@ fn s1_fn() {
     let mut deck = Deck::new();
 
     deck.shuffle();
+    // TODO: Add Error handling - If u deal more than 12 cards error handling
     let cards_dealt = deck.deal(2);
     println!("Cards: {:#?}", cards_dealt);
     println!("Total number of cards: {}", cards_dealt.len().yellow());
