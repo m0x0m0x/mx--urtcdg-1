@@ -64,6 +64,9 @@ impl Deck {
         println!("Random die roll: {}", rng().random_range(1..=600));
         self.cards.shuffle(&mut rngz);
     }
+
+    // Function to deal out random cards
+    fn deal(&mut self, num_cards: usize) {}
 }
 
 fn s1_fn() {
