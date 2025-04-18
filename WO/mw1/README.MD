@@ -25,6 +25,7 @@ Site | What
 [`Docs.rs`](https://docs.rs/) | The Rust Docs, the official docs for Rust
 [`Rust Cookbook`](https://rust-lang-nursery.github.io/rust-cookbook/) | The Rust Cookbook, the official cookbook for Rust
 [`Rust API Docs`](https://api.rust-lang.org/) | The Rust API Docs, the official API docs for Rust
+[`Rust Random Crate`](https://rust-random.github.io/book/guide-start.html) | Rust Crate 
 
 # Notez 
 
