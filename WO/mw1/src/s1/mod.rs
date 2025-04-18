@@ -7,7 +7,8 @@ Sectin 1 Work here
 use std::os::unix::thread;
 
 use rand::{
-    prelude, rng,
+    prelude::*,
+    rng,
     seq::{SliceChooseIter, SliceRandom},
 };
 
@@ -60,8 +61,7 @@ impl Deck {
     fn shuffle(&mut self) {
         // Create a new random number generator
         let mut rngz = rng();
-        println!("Random Pusy Generator: {:#?}", rngz);
-        println!("Random die roll: {}", rng.random_range(1..=6));
+        println!("Random die roll: {}", rng().random_range(1..=600));
         self.cards.shuffle(&mut rngz);
     }
 }
