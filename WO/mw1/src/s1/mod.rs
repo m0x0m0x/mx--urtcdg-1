@@ -61,6 +61,8 @@ impl Deck {
     fn shuffle(&mut self) {
         // Create a new random number generator
         let mut rngz = rng();
+
+        // TODO: Add Error handling
         println!("Random die roll: {}", rng().random_range(1..=600));
         self.cards.shuffle(&mut rngz);
     }
@@ -77,7 +79,7 @@ fn s1_fn() {
 
     let mut deck = Deck::new();
 
-    // deck.shuffle();
+    deck.shuffle();
     let cards = deck.deal(3);
     println!("Cards: {:#?}", cards);
 
