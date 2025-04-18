@@ -1,1 +1,5 @@
-pub mod w1
+/*
+Note the mod keyword will have the file which contains the function
+*/
+
+pub mod w1;

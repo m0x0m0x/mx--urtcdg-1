@@ -2,14 +2,10 @@
 Main entry point for the Rust application.
 */
 
-mod mytest;
-mod s1;
-
+mod sec3;
 mod utils;
-
-// use mytest::mstrt::mstrt_main;
-use s1::s1main as panty_smell;
+use sec3::w1::w1_sec3_main;
 
 fn main() {
-    panty_smell();
+    w1_sec3_main();
 }
