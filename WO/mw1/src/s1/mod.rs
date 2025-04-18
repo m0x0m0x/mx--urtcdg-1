@@ -52,7 +52,10 @@ impl Deck {
     }
 
     // Shuffle function
-    fn shuffle(&self) {}
+    fn shuffle(&mut self) {
+        // Create a new random number generator
+        let mut rng = rand::thread_rng();
+    }
 }
 
 fn s1_fn() {
