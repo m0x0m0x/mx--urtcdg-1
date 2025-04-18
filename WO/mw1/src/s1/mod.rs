@@ -4,6 +4,8 @@ Sectin 1 Work here
 
 #![allow(unused)]
 
+use std::os::unix::thread;
+
 use rand::{
     rng,
     seq::{SliceChooseIter, SliceRandom},
@@ -58,7 +60,7 @@ impl Deck {
     fn shuffle(&mut self) {
         // Create a new random number generator
         let mut rngz = rng();
-        println!("Random Pusy Generator: {:#?}", rngz);
+        println!("Random Pusy Generator: {:#?}", thread);
         self.cards.shuffle(&mut rngz);
     }
 }
