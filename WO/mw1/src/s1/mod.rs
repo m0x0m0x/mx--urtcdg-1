@@ -77,7 +77,9 @@ fn s1_fn() {
 
     let mut deck = Deck::new();
 
-    deck.shuffle();
+    // deck.shuffle();
+    let cards = deck.deal(3);
+    println!("Cards: {:#?}", cards);
 
-    println!("Deck: {:#?}", deck.green());
+    println!("Main Deck: {:#?}", deck.green());
 }
