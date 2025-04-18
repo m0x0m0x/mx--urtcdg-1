@@ -66,7 +66,9 @@ impl Deck {
     }
 
     // Function to deal out random cards
-    fn deal(&mut self, num_cards: usize) {}
+    fn deal(&mut self, num_cards: usize) -> Vec<String> {
+        self.cards
+    }
 }
 
 fn s1_fn() {
