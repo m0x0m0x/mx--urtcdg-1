@@ -4,6 +4,8 @@ Sectin 1 Work here
 
 #![allow(unused)]
 
+use rand::{rng, seq::SliceChooseIter};
+
 use crate::utils::{header, pswg};
 use yansi::Paint;
 
