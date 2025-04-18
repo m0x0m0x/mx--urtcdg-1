@@ -46,8 +46,7 @@ impl Deck {
             }
         }
 
-        let deck = Deck { cards };
-        return deck;
+        return let deck = Deck { cards };
     }
 }
 
