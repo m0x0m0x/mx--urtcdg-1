@@ -4,7 +4,10 @@ Sectin 1 Work here
 
 #![allow(unused)]
 
-use rand::{rng, seq::SliceChooseIter};
+use rand::{
+    rng,
+    seq::{SliceChooseIter, SliceRandom},
+};
 
 use crate::utils::{header, pswg};
 use yansi::Paint;
@@ -32,7 +35,7 @@ impl Deck {
         // list of suits
         let suits = ["SS", "HH", "AA", "DD"];
         // List of values
-        let values = ["Ace", "Two", "Three"];
+        let values = ["Ace_1", "Two_2", "Three_3"];
 
         // Empty vector of cards
         let mut cards = vec![];
