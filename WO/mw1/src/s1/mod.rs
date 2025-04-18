@@ -54,7 +54,7 @@ impl Deck {
     // Shuffle function
     fn shuffle(&mut self) {
         // Create a new random number generator
-        let mut rng = rand::thread_rng();
+        let mut rng = rng();
     }
 }
 
