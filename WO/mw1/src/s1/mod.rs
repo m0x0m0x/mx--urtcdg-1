@@ -81,9 +81,10 @@ fn s1_fn() {
     let mut deck = Deck::new();
 
     deck.shuffle();
-    let cards = deck.deal(4);
-    println!("Cards: {:#?}", cards);
+    let cards_dealt = deck.deal(2);
+    println!("Cards: {:#?}", cards_dealt);
+    println!("Total number of cards: {}", cards_dealt.len().yellow());
 
     println!("Main Deck: {:#?}", deck.green());
-    println!("Total number of cards: {}", deck.cards.len());
+    println!("Total number of cards: {}", deck.cards.len().red());
 }
