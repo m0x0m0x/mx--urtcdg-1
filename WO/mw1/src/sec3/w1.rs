@@ -1,5 +1,11 @@
 /*
-Section 3 OWnership and Borrowing Main Word Done here 
+Section 3 OWnership and Borrowing Main Word Done here
 */
 
-use crate::utils{header, pswg};
+use crate::utils::{header, pswg};
+
+/////////////// Main function call //////////////
+
+pub fn w1_sec3_main() {
+    pswg("Section 3 - Work1")
+}
