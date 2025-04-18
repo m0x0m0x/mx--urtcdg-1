@@ -57,9 +57,9 @@ impl Deck {
     // Shuffle function
     fn shuffle(&mut self) {
         // Create a new random number generator
-        let mut rng = rng();
-        println!("Random Pusy Generator: {:#?}", rng);
-        self.cards.shuffle(&mut rng);
+        let mut rngz = rng();
+        println!("Random Pusy Generator: {:#?}", rngz);
+        self.cards.shuffle(&mut rngz);
     }
 }
 
