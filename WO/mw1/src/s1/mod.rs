@@ -59,7 +59,7 @@ fn s1_fn() {
     // Printing the header text
     pswg("Section 1 - Structs and Vectors".to_string());
 
-    let deck = Deck::new();
+    let mut deck = Deck::new();
 
     deck.shuffle();
 
