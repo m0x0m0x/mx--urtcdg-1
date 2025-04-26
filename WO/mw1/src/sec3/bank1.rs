@@ -2,7 +2,6 @@
 Section 3 - Bank Project work
 */
 
-
 // Impors
 use crate::utils::{header, pswg};
 
@@ -21,11 +20,17 @@ fn sb1() {
 
 //// Sec1 - Bank Project Work Here //////////
 
-
 // * Main struct
-[derive(Debug)]
+#[derive(Debug)]
+
 struct Account {
     balance: u32,
     id: i32,
     holder: String,
+}
+
+// Bank Struct that holds the Account structs
+#[derive(Debug)]
+struct Bank {
+    accounts: Vec<Account>,
 }
