@@ -22,7 +22,6 @@ fn sb1() {
 
 // * Main struct
 #[derive(Debug)]
-
 struct Account {
     balance: u32,
     id: i32,
