@@ -29,16 +29,16 @@ struct Account {
     holder: String,
 }
 
-#[allow(dead_code)]
-impl Bank {
-    fn new() -> Self {
-        Bank { accounts: vec![] }
-    }
-}
-
 // Bank Struct that holds the Account structs
 #[derive(Debug)]
 #[allow(dead_code)]
 struct Bank {
     accounts: Vec<Account>,
+}
+
+#[allow(dead_code)]
+impl Bank {
+    fn new() -> Self {
+        Bank { accounts: vec![] }
+    }
 }
