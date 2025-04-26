@@ -7,3 +7,9 @@
 2. This document will also haved a dump of notes
 
 
+```mermaid 
+flowchart LR
+    Bank[Bank] --> Account1[Account<br>balance: Integer<br>id: Unsigned Integer<br>holder: String]
+    Bank --> Account2[Account<br>balance: Integer<br>id: Unsigned Integer<br>holder: String]
+    Bank --> Account3[Account<br>balance: Integer<br>id: Unsigned Integer<br>holder: String]
+```
