@@ -19,6 +19,8 @@ const camaro = {
   engine: engine,
 };
 
+// Since this one function is called on both objects
+// Engine status become false
 function checkEngine(car: { name: string; engine: { working: boolean } }) {
   if (car.name === "Mustang") {
     car.engine.working = false;
