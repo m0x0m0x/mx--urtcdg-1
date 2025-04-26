@@ -55,5 +55,8 @@ fn sb_main_bank() {
 
     // Creating a new bank
     let bank = Bank::new();
+    // Creating account in the new bank
+    let account = Account::new(1, String::from("me"));
+
     println!("{:#?}", bank);
 }
