@@ -19,12 +19,12 @@ it will change the engine property in other object too
 
 const mustang = {
   name: "Mustang",
-  engine: engine,
+  engine: engine, // <-- This is the problem same property in the second
 };
 
 const camaro = {
   name: "Camaro",
-  engine: engine,
+  engine: engine, // <-- Same issue here
 };
 
 // Since this one function is called on both objects
