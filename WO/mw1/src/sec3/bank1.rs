@@ -52,4 +52,8 @@ impl Bank {
 
 fn sb_main_bank() {
     pswg("Main Bank Function".to_string());
+
+    // Creating a new bank function here
+    let bank = Bank::new();
+    println!("{:#?}", bank);
 }
