@@ -1,5 +1,6 @@
 
 1. [Sec3](#sec3)
+   1. [Project Planning](#project-planning)
 
 # Sec3 
 
@@ -13,3 +14,10 @@ flowchart LR
     Bank --> Account2[Account<br>balance: Integer<br>id: Unsigned Integer<br>holder: String]
     Bank --> Account3[Account<br>balance: Integer<br>id: Unsigned Integer<br>holder: String]
 ```
+
+## Project Planning 
+
+1. Accounts will be sructs with the following fields:
+   - balance: Integer
+   - id: Unsigned Integer
+   - holder: String
