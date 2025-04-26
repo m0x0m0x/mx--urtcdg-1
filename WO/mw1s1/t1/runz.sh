@@ -21,5 +21,12 @@ h1() {
 }
 
 # Commands
+bun_run() {
+    h1 "Running bun run on index.ts"
+    co1="bun run index.ts"
+    echo -e "${GREEN} ${co1} {NC}"
+    eval "$co1"
+}
 
 # Execution
+bun_run
