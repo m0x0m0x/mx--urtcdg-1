@@ -22,12 +22,14 @@ fn sb1() {
 
 // * Main struct
 #[derive(Debug)]
+#[allow(dead_code)]
 struct Account {
     balance: u32,
     id: i32,
     holder: String,
 }
 
+#[allow(dead_code)]
 impl Bank {
     fn new() -> Self {
         Bank { accounts: vec![] }
@@ -36,6 +38,7 @@ impl Bank {
 
 // Bank Struct that holds the Account structs
 #[derive(Debug)]
+#[allow(dead_code)]
 struct Bank {
     accounts: Vec<Account>,
 }
