@@ -19,7 +19,7 @@ const camaro = {
   engine: engine,
 };
 
-function checkEngine(car) {
+function checkEngine(car: { name: string; engine: { working: boolean } }) {
   if (car.name === "Mustang") {
     car.engine.working = false;
   }
