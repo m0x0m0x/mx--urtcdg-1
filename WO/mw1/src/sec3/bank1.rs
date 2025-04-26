@@ -50,6 +50,11 @@ impl Bank {
     }
 }
 
+// Helper function to print account
+fn print_account(account: Account) {
+    println!("{:#?}", account);
+}
+
 fn sb_main_bank() {
     pswg("Main Bank Function".to_string());
 
@@ -59,6 +64,7 @@ fn sb_main_bank() {
     let account = Account::new(1, String::from("me"));
 
     // Printing the structs
-    println!("{:#?}", bank);
-    println!("{:#?}", account);
+    // println!("{:#?}", bank);
+    print_account(account);
+    print_account(account);
 }
