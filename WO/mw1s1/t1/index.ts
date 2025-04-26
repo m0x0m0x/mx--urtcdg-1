@@ -9,6 +9,14 @@ const engine = {
   working: true,
 };
 
+/* 
+The intention bug in both the objects is tha its sharing the engine
+property so, if u change the engine property in one object
+it will change the engine property in other object too
+- So thats why when calling the checkEngine function
+- The engine property for both is false
+*/
+
 const mustang = {
   name: "Mustang",
   engine: engine,
