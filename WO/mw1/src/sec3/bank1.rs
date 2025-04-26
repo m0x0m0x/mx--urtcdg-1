@@ -7,13 +7,13 @@ use crate::utils::{header, pswg};
 
 //////// /// Main function call ////////////
 pub fn bank1_main() {
-    sb1();
+    sb_main_bank();
 }
 
 ////// Sub functions here //////////
 
 // Test function
-fn sb1() {
+fn sbtest() {
     pswg("Sub Bank 1".to_string());
     header("Sub Function test")
 }
@@ -52,4 +52,8 @@ impl Bank {
     fn new() -> Self {
         Bank { accounts: vec![] }
     }
+}
+
+fn sb_main_bank() {
+    pswg("Main Bank Function");
 }
