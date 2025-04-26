@@ -19,4 +19,11 @@ const camaro = {
   engine: engine,
 };
 
-function checkEngine(car) {}
+function checkEngine(car) {
+  if (car.name === "Mustang") {
+    car.engine.working = false;
+  }
+}
+
+console.log(chalk.green(mustang));
+console.log(chalk.blue(camaro));
