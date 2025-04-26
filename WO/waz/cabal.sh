@@ -96,13 +96,15 @@ cas() {
 
     # --- Configuration ---
     local -a wallets=(
-        "0x420A8Fe13265Df3B9323C3D7681b2854B1309338"
-        "0x420fFfdA7565D31e9b4b7ebAF0269b5564644656"
+        "0x991A0FF9529bbC4E1b66cdb47e44DEeD1FcEE999"
+        "0x99F23c70837aa99175939077D34F20896CE8D399"
+        "0x995D96C5f70087cd6eA3c4F5eB8Ab7DeC3fDbe99"
     )
 
     local -a keyz=(
-        "0x6890220d6cc0218032cab963a528672d85643a2c7edf340de6e27861d1900958"
-        "0xff630bf91f95d3e7af70c12490b858cd5e0818b2bc6af6fccff9d933a1097bc4"
+        "0x15e64abfed3218cfe2ea1117e38eedb0a51990544534700e61cd803674be31ff"
+        "0xe1eae1464d5fe82c12606b62ccdbe0eccb90e2d2134417b459dfb9dfda09f684"
+        "0x17c674a1c7e43761479d09d76864c49d516e217006d965ae9df1fbf02ccc241d"
 
     )
 
