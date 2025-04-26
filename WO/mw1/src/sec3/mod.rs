@@ -9,7 +9,7 @@ Note the mod keyword will have the file which contains the function
 pub mod w2
 - Then in main.rs , you will call the function within w2.rs
 - For example the function inside w1.rs is w1_sec3_main, which is bein called in main.rs for execution
-- bank1
+- bank1.rs - Has the actual bank tutorial work
 */
 
 pub mod bank1;
