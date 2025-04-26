@@ -28,6 +28,12 @@ struct Account {
     holder: String,
 }
 
+impl Bank {
+    fn new() -> Self {
+        Bank { accounts: vec![] }
+    }
+}
+
 // Bank Struct that holds the Account structs
 #[derive(Debug)]
 struct Bank {
