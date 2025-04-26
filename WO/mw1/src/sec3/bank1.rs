@@ -25,8 +25,19 @@ fn sb1() {
 #[allow(dead_code)]
 struct Account {
     balance: u32,
-    id: i32,
+    id: u32,
     holder: String,
+}
+
+#[allow(dead_code)]
+impl Account {
+    fn new(id: u32, holder: String) -> Self {
+        Account {
+            id,
+            holder,
+            balance: 0,
+        }
+    }
 }
 
 // Bank Struct that holds the Account structs
