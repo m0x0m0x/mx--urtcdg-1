@@ -2,6 +2,7 @@
 Section 3 - Bank Project work
 */
 
+#[allow(unused)]
 use crate::utils::{header, pswg};
 
 //////// /// Main function call ////////////
@@ -19,7 +20,9 @@ fn sb1() {
 
 //// Sec1 - Bank Project Work Here //////////
 
+// * Main struct
 struct Account {
-    balance: int32,
-    id: usize,
+    balance: u32,
+    id: i32,
+    holder: String,
 }
