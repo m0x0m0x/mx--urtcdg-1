@@ -5,3 +5,6 @@
 
 
 # mw1s1
+
+> This is a continuation of mw1. To learn important rust concepts
+
