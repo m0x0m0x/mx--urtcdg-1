@@ -2,6 +2,7 @@
 Section 3 - Bank Project work
 */
 
+#[allow(dead_code)]
 // Impors
 use crate::utils::{header, pswg};
 
@@ -55,5 +56,5 @@ impl Bank {
 }
 
 fn sb_main_bank() {
-    pswg("Main Bank Function");
+    pswg("Main Bank Function".to_string());
 }
