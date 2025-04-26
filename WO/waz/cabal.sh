@@ -29,7 +29,6 @@ cwb() {
         "0x991A0FF9529bbC4E1b66cdb47e44DEeD1FcEE999"
         "0x99F23c70837aa99175939077D34F20896CE8D399"
         "0x995D96C5f70087cd6eA3c4F5eB8Ab7DeC3fDbe99"
-
     )
 
     # Network Configurations (Format: "NetworkName:RPC_URL")
@@ -42,14 +41,20 @@ cwb() {
     # Check for 'cast' command dependency
     if ! command -v cast &>/dev/null; then
         echo -e "${RED}Error: 'cast' command not found. Please install Foundry (https://getfoundry.sh).${NC}"
-        return 1 # Use return instead of exit for functions
+        return 1
     fi
 
-    local overall_status=0 # 0 = success, 1 = failure occurred
+    local overall_status=0
+    local output_file="wallet_balances_$(date +%Y-%m-%d).txt"
+
+    # Initialize the output file
+    echo "Wallet Balance Check - $(date)" >"$output_file"
+    echo "----------------------------------------" >>"$output_file"
 
     # Loop through each wallet
     for wallet_address in "${wallets[@]}"; do
         echo -e "--- Checking Wallet: ${YELLOW}${wallet_address}${NC} ---"
+        echo "--- Checking Wallet: ${wallet_address} ---" >>"$output_file"
 
         # Loop through each network for the current wallet
         for network_info in "${networks[@]}"; do
@@ -59,34 +64,41 @@ cwb() {
             local balance_output
             local exit_code
 
-            # Construct and execute the command directly
-            # Using 'cast balance --ether' (or 'cast b -e') to get balance in Ether
-            # Capture stderr along with stdout to see potential errors from cast/RPC
+            # Get balance
             echo "Checking ${network_name}..."
+            echo "Checking ${network_name}..." >>"$output_file"
             balance_output=$(cast balance --ether "${wallet_address}" --rpc-url "${rpc_url}" 2>&1)
             exit_code=$?
 
             if [ $exit_code -ne 0 ]; then
                 # Report error but continue checking other networks/wallets
                 echo -e "${RED}Error:${NC} Failed to get ${network_name} balance."
-                echo -e "${RED}Details:${NC} ${balance_output}" # Show the error message from cast
-                overall_status=1                                # Mark that at least one failure occurred
+                echo -e "${RED}Details:${NC} ${balance_output}"
+                echo "Error: Failed to get ${network_name} balance." >>"$output_file"
+                echo "Details: ${balance_output}" >>"$output_file"
+                overall_status=1
             else
                 # Report success
                 echo -e "${GREEN}${network_name} Balance:${NC} ${balance_output} ETH"
+                echo "${network_name} Balance: ${balance_output} ETH" >>"$output_file"
             fi
         done
         echo "-------------------------------------------------------"
+        echo "-------------------------------------------------------" >>"$output_file"
     done
 
     # Final status report
     if [ $overall_status -ne 0 ]; then
         echo -e "${YELLOW}Balance Check Completed with errors.${NC}"
-        return 1 # Indicate failure
+        echo "Balance Check Completed with errors." >>"$output_file"
+        return 1
     else
         echo -e "${GREEN}Balance Check Completed Successfully.${NC}"
-        return 0 # Indicate success
+        echo "Balance Check Completed Successfully." >>"$output_file"
+        return 0
     fi
+
+    echo "Results saved to: $output_file"
 }
 
 # Sending function
