@@ -25,5 +25,5 @@ function checkEngine(car) {
   }
 }
 
-console.log(chalk.green(mustang));
+console.log(chalk.green(JSON.stringify(mustang, null, 2)));
 console.log(chalk.blue(camaro));
