@@ -12,5 +12,7 @@ pub mod w2
 - bank1.rs - Has the actual bank tutorial work
 */
 
+#![allow(dead_code)]
+
 pub mod bank1;
 // pub mod w1;

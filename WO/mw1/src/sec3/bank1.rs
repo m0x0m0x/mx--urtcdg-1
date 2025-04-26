@@ -2,7 +2,6 @@
 Section 3 - Bank Project work
 */
 
-#[allow(dead_code)]
 // Impors
 use crate::utils::{header, pswg};
 
@@ -23,14 +22,12 @@ fn sbtest() {
 
 // * Main struct
 #[derive(Debug)]
-#[allow(dead_code)]
 struct Account {
     balance: u32,
     id: u32,
     holder: String,
 }
 
-#[allow(dead_code)]
 impl Account {
     fn new(id: u32, holder: String) -> Self {
         Account {
@@ -43,12 +40,10 @@ impl Account {
 
 // Bank Struct that holds the Account structs
 #[derive(Debug)]
-#[allow(dead_code)]
 struct Bank {
     accounts: Vec<Account>,
 }
 
-#[allow(dead_code)]
 impl Bank {
     fn new() -> Self {
         Bank { accounts: vec![] }
