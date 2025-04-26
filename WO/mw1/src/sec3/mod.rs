@@ -13,6 +13,7 @@ pub mod w2
 */
 
 #![allow(dead_code)]
+#![allow(unused_variables)]
 
 pub mod bank1;
 // pub mod w1;

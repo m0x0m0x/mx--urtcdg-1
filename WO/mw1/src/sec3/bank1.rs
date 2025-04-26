@@ -58,5 +58,7 @@ fn sb_main_bank() {
     // Creating account in the new bank
     let account = Account::new(1, String::from("me"));
 
+    // Printing the structs
     println!("{:#?}", bank);
+    println!("{:#?}", account);
 }
